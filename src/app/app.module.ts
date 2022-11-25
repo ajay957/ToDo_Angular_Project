@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddTodoComponent } from './add-todo/add-todo.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ViewAllComponent } from './view-all/view-all.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 
 const myRoute:Routes=[
@@ -14,7 +14,7 @@ const myRoute:Routes=[
     component:AddTodoComponent
   },
   {
-    path:"/view",
+    path:"view",
     component:ViewAllComponent
   }
 ]
@@ -22,7 +22,8 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     AddTodoComponent,
-    ViewAllComponent
+    ViewAllComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
