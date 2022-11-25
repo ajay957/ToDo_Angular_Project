@@ -5,18 +5,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddTodoComponent } from './add-todo/add-todo.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ViewAllComponent } from './view-all/view-all.component';
 
 
 const myRoute:Routes=[
   {
     path:"",
     component:AddTodoComponent
+  },
+  {
+    path:"/view",
+    component:ViewAllComponent
   }
 ]
 @NgModule({
   declarations: [
     AppComponent,
-    AddTodoComponent
+    AddTodoComponent,
+    ViewAllComponent
   ],
   imports: [
     BrowserModule,
